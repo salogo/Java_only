@@ -11,7 +11,8 @@ public class CartUtility {
         Cart temp = null;
         for (Cart c: cartList) {
             index++;
-            if (c.getCustid().equals(cart.getCustid()) && c.getProdid().equals(cart.getProdid()) ) {//
+            // if (c.getCustid().equals(cart.getCustid()) && c.getProdid().equals(cart.getProdid()) ) {
+            if (c.getCustid() == cart.getCustid() && c.getProdid() ==  cart.getProdid()) {
                 temp = c;
                 break;
             }

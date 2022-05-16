@@ -70,7 +70,8 @@ public class Main {
     private static void deleteCart() {
         Cart temp = null;
         for (Cart c: CartUtility.cartList) {
-            if (c.getCustid().equals(customer.getCustid())) {
+            //if (c.getCustid().equals(customer.getCustid())) {
+            if (c.getCustid() == customer.getCustid()) {
                 temp = c;
                 break;
             }
